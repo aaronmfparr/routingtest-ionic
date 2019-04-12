@@ -1,14 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      {{title}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    The world is your oyster, but you may, if you wish, go to <ion-button [routerLink]="'/hell/surface'"><ion-label>Hell</ion-label></ion-button>.
+    <p>If you get lost, do not worry; you will probably be in Hell.</p>
   </div>
 </ion-content>

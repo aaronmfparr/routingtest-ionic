@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    You have landed on the {{layer}} layer of Hell.
+
+    You can change layers if you wish.
+
+    <ion-select name="hellsLayerSelector" value="{{layer}}" (ionChange)="respond($event.detail.value)" interface="popover" style="border: 1px solid;">
+      <ion-select-option value="surface">Surface</ion-select-option>
+      <ion-select-option value="bottom">Bottom</ion-select-option>
+    </ion-select>
+
+  </div>
+</ion-content>
